@@ -1,0 +1,18 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OPENROUTER_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+ALPHA_VANTAGE_KEY = os.getenv("ALPHA_VANTAGE_KEY")
+
+# Research loop settings
+MAX_RESEARCH_ITERATIONS = 15
+MIN_RESEARCH_ITERATIONS = 5
+COVERAGE_THRESHOLD = 0.80
+
+# RAG settings
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 200
+TOP_K_RESULTS = 5
